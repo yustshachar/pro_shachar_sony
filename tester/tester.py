@@ -1,6 +1,10 @@
-from datetime import datetime
 
 
-age = datetime(2019,5,12).date()
 
-print(datetime.now().date() - age)
+from datetime import *
+from dateutil.relativedelta import relativedelta
+
+# print(datetime.now() + datetime.strftime())
+
+print(datetime.now())
+print(datetime.now() - relativedelta(days=1))
